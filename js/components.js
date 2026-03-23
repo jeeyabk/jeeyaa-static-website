@@ -5,7 +5,7 @@ class Header extends HTMLElement {
       <nav class="navbar">
         <div class="container">
           <a href="index.html" class="navbar-brand">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-red);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-color);">
               <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
               <line x1="8" y1="21" x2="16" y2="21"></line>
               <line x1="12" y1="17" x2="12" y2="21"></line>
@@ -29,7 +29,7 @@ class Footer extends HTMLElement {
       <footer class="footer">
         <div class="container">
           <p style="margin-bottom: 0.5rem; font-weight: 500;">&copy; ${new Date().getFullYear()} Jeeya BK. IT Professional & System Administrator.</p>
-          <p style="font-size: 0.875rem; color: #718096; margin-bottom: 0;">Built with HTML5, CSS3, & Vanilla JS for Cloudflare Pages.</p>
+          <p style="font-size: 0.875rem; color: var(--accent-color); margin-bottom: 0;">Built with HTML5, CSS3, & Vanilla JS for Cloudflare Pages.</p>
         </div>
       </footer>
     `;
