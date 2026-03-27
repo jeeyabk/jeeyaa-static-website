@@ -1,273 +1,421 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Jeeya B.K., an IT Student and aspiring AI Engineer.">
-    <title>Jeeya B.K. | Aspiring AI Engineer</title>
-    <!-- Modern typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="js/components.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Jeeya B.K., a second-year IT student at Informatics College Pokhara. Focused on system administration, networking, and software development.">
+  <meta name="keywords" content="Jeeya BK, IT Student, Portfolio, System Administration, Networking, Linux, Informatics College Pokhara">
+  <meta name="author" content="Jeeya B.K.">
+  <title>Jeeya B.K. — IT Student Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="js/components.js" defer></script>
 </head>
 <body>
-    <site-header></site-header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <canvas id="hero-canvas"></canvas>
-            <div class="container hero-content">
-                <div class="hero-text animate-fade-in fade-delay-1">
-                    <p class="greeting">Hi, I'm</p>
-                    <h1>Jeeya <span>B.K.</span></h1>
-                    <h2 class="title">IT Student | Aspiring AI Engineer</h2>
-                    <p class="tagline">Passionate about building intelligent systems and learning how technology shapes the future.</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-outline">Contact Me</a>
-                        <a href="#" class="btn btn-ghost">Download Resume</a>
-                    </div>
-                </div>
-                <div class="hero-image animate-fade-in fade-delay-2">
-                    <img src="assets/avatar.png" alt="Jeeya B.K. Profile Avatar" class="avatar" onerror="this.onerror=null; this.src=''; this.alt='Avatar Image Missing';">
-                </div>
+  <!-- ═══ NAVBAR ═══ -->
+  <site-header></site-header>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section id="hero" class="hero">
+      <div class="hero__bg">
+        <div class="hero__grid-overlay"></div>
+      </div>
+      <div class="container hero__inner">
+
+        <div class="hero__text">
+          <p class="greeting">Hello, I'm</p>
+          <h1 class="hero__name">Jeeya<br><span>B.K.</span></h1>
+          <p class="hero__subtitle">IT Student</p>
+          <p class="hero__tagline">Building practical technical skills through hands-on learning and coursework projects.</p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#about"    class="btn btn-outline">About Me</a>
+            <a href="#contact"  class="btn btn-soft">Contact</a>
+          </div>
+        </div>
+
+        <div class="hero__image-wrap">
+          <img
+            src="assets/avatar.png"
+            alt="Jeeya B.K. — IT Student, Informatics College Pokhara"
+            class="hero__avatar"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section id="about" class="section section--alt">
+      <div class="container">
+        <div class="about__inner fade-up">
+
+          <div>
+            <img
+              src="assets/avatar.png"
+              alt="Jeeya B.K."
+              class="about__image"
+            >
+          </div>
+
+          <div class="about__body">
+            <span class="section-label">About Me</span>
+            <h2 class="section-title">A grounded IT student,<br>learning by doing.</h2>
+            <p>
+              I am a second-year IT student at <strong>Informatics College Pokhara</strong>,
+              currently building strong technical foundations through structured coursework and
+              hands-on practical projects. My studies span system administration, computer
+              networking, and software development.
+            </p>
+            <p>
+              I have working experience with Linux environments including Ubuntu system
+              administration, virtual machine management, and basic server configuration.
+              Alongside systems work, I am developing programming skills in Python, Java, and
+              JavaScript, and am learning how to design and query relational databases using SQL.
+            </p>
+            <p>
+              My approach to learning is methodical and consistent — I prefer deeply understanding
+              foundational concepts so that I can build confidently on top of them. I am focused
+              on developing technical competence that is practical, reliable, and ready for
+              professional application.
+            </p>
+            <div class="about__tags">
+              <span class="tag">System Administration</span>
+              <span class="tag">Linux / Ubuntu</span>
+              <span class="tag">Networking</span>
+              <span class="tag">Virtualization</span>
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Web Development</span>
             </div>
-        </section>
+          </div>
 
-        <!-- About Me -->
-        <section id="about" class="section bg-alt fade-up">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content text-center" style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8;">
-                    <p style="margin-bottom: 1.5rem;">I am a second-year IT student at <strong>Informatics College Pokhara</strong>, deeply interested in artificial intelligence and discovering how intelligent systems interact with structured data. My journey revolves around continually growing my knowledge in modern programming, intricate database design, and robust networking frameworks.</p>
-                    <p>I maintain a strong motivation to learn, adapt, and build technical solutions. My ultimate career objective is to become a professional AI Engineer, transforming complex concepts into accessible, functional applications that serve the future.</p>
-                </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <span class="section-label">Technical Skills</span>
+        <h2 class="section-title centered">Areas of Knowledge</h2>
+
+        <div class="skills__grid fade-up">
+
+          <!-- Systems & Networking -->
+          <div class="card delay-1">
+            <h3 class="skill-card__title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              Systems &amp; Networking
+            </h3>
+            <div class="skill-item">
+              <div class="skill-item__label"><span>Networking Fundamentals</span><span class="skill-item__pct">70%</span></div>
+              <div class="bar"><div class="bar__fill" style="--w:70%"></div></div>
             </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="section fade-up">
-            <div class="container">
-                <h2 class="section-title">Technical Expertise</h2>
-                <div class="skills-grid">
-                    <!-- Programming -->
-                    <div class="skill-category card">
-                        <h3>Programming</h3>
-                        <div class="skill-item">
-                            <span>Python</span>
-                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Java</span>
-                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>JavaScript</span>
-                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
-                        </div>
-                    </div>
-                    <!-- AI & Data -->
-                    <div class="skill-category card">
-                        <h3>AI & Data</h3>
-                        <div class="skill-item">
-                            <span>Machine Learning Fundamentals</span>
-                            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Data Analysis</span>
-                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Problem Solving</span>
-                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-                        </div>
-                    </div>
-                    <!-- Web Development -->
-                    <div class="skill-category card">
-                        <h3>Web Development</h3>
-                        <div class="skill-item">
-                            <span>HTML & CSS</span>
-                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Basic Backend Concepts</span>
-                            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
-                        </div>
-                    </div>
-                    <!-- Networking & DB -->
-                    <div class="skill-category card">
-                        <h3>Networking & Databases</h3>
-                        <div class="skill-item">
-                            <span>Basic Networking</span>
-                            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>SQL Fundamentals</span>
-                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Database Design</span>
-                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="skill-item">
+              <div class="skill-item__label"><span>Virtualization</span><span class="skill-item__pct">65%</span></div>
+              <div class="bar"><div class="bar__fill" style="--w:65%"></div></div>
             </div>
-        </section>
-
-        <!-- Projects -->
-        <section id="projects" class="section bg-alt fade-up">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card card">
-                        <div class="project-content">
-                            <h3>AI Prediction System</h3>
-                            <p>Upcoming future initiative to build a localized predictive model utilizing foundational ML algorithms.</p>
-                            <div class="tech-stack">
-                                <span>Python</span><span>Scikit-Learn</span><span>Pandas</span>
-                            </div>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-text">GitHub &rarr;</a>
-                        </div>
-                    </div>
-                    <div class="project-card card">
-                        <div class="project-content">
-                            <h3>Web Application Project</h3>
-                            <p>A responsive frontend solution incorporating modular elements and seamless cross-platform performance.</p>
-                            <div class="tech-stack">
-                                <span>HTML5</span><span>CSS3</span><span>Vanilla JS</span>
-                            </div>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-text">GitHub &rarr;</a>
-                            <a href="#" class="btn-text">Demo &rarr;</a>
-                        </div>
-                    </div>
-                    <div class="project-card card">
-                        <div class="project-content">
-                            <h3>Coursework Software</h3>
-                            <p>Academic projects emphasizing software engineering lifecycles and structured system architecture.</p>
-                            <div class="tech-stack">
-                                <span>Java</span><span>OOP</span>
-                            </div>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-text">GitHub &rarr;</a>
-                        </div>
-                    </div>
-                    <div class="project-card card">
-                        <div class="project-content">
-                            <h3>Data Analysis Mini Project</h3>
-                            <p>Extracted insights from mock datasets to deliver structured reports on performance metrics.</p>
-                            <div class="tech-stack">
-                                <span>SQL</span><span>Python</span>
-                            </div>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-text">GitHub &rarr;</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="skill-item">
+              <div class="skill-item__label"><span>Ubuntu &amp; Linux Administration</span><span class="skill-item__pct">72%</span></div>
+              <div class="bar"><div class="bar__fill" style="--w:72%"></div></div>
             </div>
-        </section>
-
-        <!-- Learning Journey -->
-        <section id="journey" class="section fade-up">
-            <div class="container">
-                <h2 class="section-title">Learning Journey</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Informatics College Pokhara</h3>
-                            <span class="date">Present</span>
-                            <p>Currently pursuing IT studies with an accelerated focus on algorithmic logic, intelligent systems, and scalable infrastructure.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Continuous AI Learning</h3>
-                            <span class="date">Ongoing</span>
-                            <p>Independently absorbing concepts around neural architectures, data modelling, and solving complex problems pragmatically.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="skill-item">
+              <div class="skill-item__label"><span>Windows Server</span><span class="skill-item__pct">60%</span></div>
+              <div class="bar"><div class="bar__fill" style="--w:60%"></div></div>
             </div>
-        </section>
+          </div>
 
-        <!-- Certifications -->
-        <section id="certifications" class="section bg-alt fade-up">
-            <div class="container">
-                <h2 class="section-title">Certifications</h2>
-                <div class="certs-grid">
-                    <div class="cert-card card">
-                        <div class="cert-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);">
-                                <circle cx="12" cy="8" r="7"></circle>
-                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-                            </svg>
-                        </div>
-                        <h3>Machine Learning Fundamentals</h3>
-                        <p class="cert-status">In Progress</p>
-                    </div>
-                    <div class="cert-card card">
-                        <div class="cert-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);">
-                                <circle cx="12" cy="8" r="7"></circle>
-                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-                            </svg>
-                        </div>
-                        <h3>Data Analytics Basics</h3>
-                        <p class="cert-status">Planned</p>
-                    </div>
-                    <div class="cert-card card">
-                        <div class="cert-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);">
-                                <circle cx="12" cy="8" r="7"></circle>
-                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-                            </svg>
-                        </div>
-                        <h3>Cloud Computing Foundation</h3>
-                        <p class="cert-status">Planned</p>
-                    </div>
-                </div>
+          <!-- Programming -->
+          <div class="card delay-2">
+            <h3 class="skill-card__title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Programming
+            </h3>
+            <div class="skill-item">
+              <div class="skill-item__label"><span>Python</span><span class="skill-item__pct">75%</span></div>
+              <div class="bar"><div class="bar__fill" style="--w:75%"></div></div>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section fade-up">
-            <div class="container contact-container">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Let's Connect</h3>
-                        <p>I am always open to discussing tech, future AI opportunities, and continuous learning. Reach out to me via any of the platforms.</p>
-                        <div class="social-links">
-                            <a href="#" class="social-link">Email</a>
-                            <a href="#" class="social-link">GitHub</a>
-                            <a href="#" class="social-link">LinkedIn</a>
-                        </div>
-                    </div>
-                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-                        <div class="form-group">
-                            <input type="text" placeholder="Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+            <div class="skill-item">
+              <div class="skill-item__label"><span>Java (Basic)</span><span class="skill-item__pct">55%</span></div>
+              <div class="bar"><div class="bar__fill" style="--w:55%"></div></div>
             </div>
-        </section>
-    </main>
+            <div class="skill-item">
+              <div class="skill-item__label"><span>JavaScript (Basic)</span><span class="skill-item__pct">60%</span></div>
+              <div class="bar"><div class="bar__fill" style="--w:60%"></div></div>
+            </div>
+          </div>
 
-    <site-footer></site-footer>
+          <!-- Web Development -->
+          <div class="card delay-3">
+            <h3 class="skill-card__title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Web Development
+            </h3>
+            <div class="skill-item">
+              <div class="skill-item__label"><span>HTML &amp; CSS</span><span class="skill-item__pct">80%</span></div>
+              <div class="bar"><div class="bar__fill" style="--w:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__label"><span>JavaScript</span><span class="skill-item__pct">60%</span></div>
+              <div class="bar"><div class="bar__fill" style="--w:60%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__label"><span>JSP</span><span class="skill-item__pct">50%</span></div>
+              <div class="bar"><div class="bar__fill" style="--w:50%"></div></div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="card delay-4">
+            <h3 class="skill-card__title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              Databases
+            </h3>
+            <div class="skill-item">
+              <div class="skill-item__label"><span>SQL</span><span class="skill-item__pct">70%</span></div>
+              <div class="bar"><div class="bar__fill" style="--w:70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__label"><span>Database Design</span><span class="skill-item__pct">65%</span></div>
+              <div class="bar"><div class="bar__fill" style="--w:65%"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROJECTS ═══ -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <span class="section-label">Projects</span>
+        <h2 class="section-title centered">Coursework &amp; Personal Work</h2>
+
+        <div class="projects__grid fade-up">
+
+          <!-- Featured Project -->
+          <div class="card project-card project-card__featured">
+            <div>
+              <span class="project-card__badge">Featured · Group Project</span>
+              <h3>IoT Marble Maze Game</h3>
+              <p>
+                A group coursework project involving an Arduino-based IoT system that controls a
+                physical marble maze. The project integrated hardware sensors with real-time
+                control logic, requiring collaboration on hardware integration, circuit design,
+                and embedded programming. A practical demonstration of teamwork and problem solving.
+              </p>
+            </div>
+            <div>
+              <div class="tech-tags">
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">IoT</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Hardware Integration</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="link-btn">GitHub</a>
+                <a href="#" class="link-btn">Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card project-card">
+            <div class="project-content">
+              <span class="project-card__badge">Coursework</span>
+              <h3>Programming Projects</h3>
+              <p>Structured programming assignments covering object-oriented design, algorithms, and applied logic in Python and Java.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">OOP</span>
+              </div>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="link-btn">GitHub</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card project-card">
+            <div class="project-content">
+              <span class="project-card__badge">Web</span>
+              <h3>Website Development Projects</h3>
+              <p>Front-end web projects applying HTML, CSS, and JavaScript. Focused on responsive layout, UI structure, and clean code practice.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">JSP</span>
+              </div>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="link-btn">GitHub</a>
+              <a href="#" class="link-btn">Demo</a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card project-card">
+            <div class="project-content">
+              <span class="project-card__badge">Database</span>
+              <h3>Database Practice Projects</h3>
+              <p>Relational database assignments covering table design, normalization, and SQL querying. Applied using real-world data scenarios.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Database Design</span>
+              </div>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="link-btn">GitHub</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ JOURNEY ═══ -->
+    <section id="journey" class="section">
+      <div class="container">
+        <span class="section-label">Learning Journey</span>
+        <h2 class="section-title centered">Education &amp; Experience</h2>
+
+        <div class="fade-up" style="margin-top: 3rem;">
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline__dot"></div>
+              <span class="timeline__date">2023 — Present</span>
+              <h3>Informatics College Pokhara</h3>
+              <p>Bachelor Level IT studies. Covering computer networks, systems administration, software engineering, databases, and programming. Active in coursework project groups throughout the curriculum.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline__dot"></div>
+              <span class="timeline__date">Coursework</span>
+              <h3>Hands-On Lab Work</h3>
+              <p>Practical lab sessions in Linux administration (Ubuntu), network configuration, virtualization environments, and Windows Server management. Emphasis on applying theory through structured exercises.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline__dot"></div>
+              <span class="timeline__date">Ongoing</span>
+              <h3>Continuous Skill Development</h3>
+              <p>Supplementing coursework with independent study in programming, system concepts, and software tools. Building consistent technical depth across the IT discipline.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CERTIFICATIONS ═══ -->
+    <section id="certifications" class="section section--alt">
+      <div class="container">
+        <span class="section-label">Certifications &amp; Training</span>
+        <h2 class="section-title centered">Learning Milestones</h2>
+
+        <div class="certs__grid fade-up" style="margin-top: 3rem;">
+
+          <div class="card cert-card">
+            <div class="cert-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary)"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <h3>Networking Certification</h3>
+            <p class="cert-card__status cert-card__status--upcoming">Planned</p>
+          </div>
+
+          <div class="card cert-card">
+            <div class="cert-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary)"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            </div>
+            <h3>Linux / System Admin Training</h3>
+            <p class="cert-card__status cert-card__status--progress">In Progress</p>
+          </div>
+
+          <div class="card cert-card">
+            <div class="cert-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary)"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <h3>Programming Certification</h3>
+            <p class="cert-card__status cert-card__status--upcoming">Planned</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+
+        <div class="contact__inner fade-up" style="margin-top: 3rem;">
+
+          <div class="contact__info">
+            <h3>Let's connect.</h3>
+            <p>I'm open to academic collaborations, project discussions, and learning opportunities. Feel free to reach out through any of the channels below.</p>
+            <ul class="social-list">
+              <li>
+                <a href="mailto:jeeya@example.com" aria-label="Email Jeeya B.K.">
+                  <span class="social-list__icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </span>
+                  jeeya@example.com
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/" target="_blank" rel="noopener" aria-label="Jeeya B.K. on GitHub">
+                  <span class="social-list__icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </span>
+                  github.com/jeeyabk
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="Jeeya B.K. on LinkedIn">
+                  <span class="social-list__icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  </span>
+                  linkedin.com/in/jeeyabk
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form id="contact-form" class="contact__form" novalidate>
+            <div class="form-field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" type="text" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" type="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-field">
+              <label for="cf-subject">Subject</label>
+              <input id="cf-subject" type="text" name="subject" placeholder="What's this about?">
+            </div>
+            <div class="form-field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Your message…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <site-footer></site-footer>
+
 </body>
 </html>
