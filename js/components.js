@@ -38,6 +38,7 @@ class SiteHeader extends HTMLElement {
       <li><a href="#projects"       class="nav-link">Projects</a></li>
       <li><a href="#journey"        class="nav-link">Journey</a></li>
       <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#documents"      class="nav-link">Docs</a></li>
       <li><a href="#contact"        class="nav-link">Contact</a></li>
     </ul>
     <button id="theme-btn" class="theme-btn" aria-label="Toggle dark mode">
